@@ -561,7 +561,7 @@ span{
 .project-catogory{
     font-size: 0.85rem;
     color: #888;
-    padding: 0.1rem 0.8rem;
+    padding: 0.1rem 1rem;
 }
 
 
@@ -724,7 +724,8 @@ span{
     .projects-grid{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        padding: 0;
     }
 
-
 }
+
