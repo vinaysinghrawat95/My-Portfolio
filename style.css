@@ -11,6 +11,7 @@ body {
     width: 100%;
 }
 
+
 .app {
     display: flex;
     justify-content: flex-start;
@@ -211,10 +212,15 @@ body {
     font-weight: 600;
 }
 
-
 article {
+    display: none;
     padding: 2rem;
 }
+
+article.active{
+    display: block;
+}
+
 
 .article-title {
     font-size: 1.9rem;
@@ -322,11 +328,6 @@ article {
         transform: translateX(-50%);
     }
 
-}
-
-
-.about{
-    display: none;
 }
 
 .article-title{
@@ -511,9 +512,6 @@ span{
     white-space: nowrap;
 }
 
-.resume{
-    display: none;
-}
 
 .projects-grid{
     display: grid;
@@ -562,6 +560,38 @@ span{
     font-size: 0.85rem;
     color: #888;
     padding: 0.1rem 1rem;
+}
+
+
+.form-title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.input-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.form-input-container{
+    width: 100%;
+}
+
+.form-input{
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.form-input-container textarea{
+    height: 20rem;
 }
 
 

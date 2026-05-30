@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -68,10 +70,10 @@
                     <div class="second-separator"></div>
                     <ul class="social-list">
                         <li class="social-item">
-                            <a href="#"><img src="assets/github-sign.png" alt=""></a>
+                            <a href="https://github.com/vinaysinghrawat95" target="_blank"><img src="assets/github-sign.png" alt=""></a>
                         </li>
                         <li class="social-item">
-                            <a href="#"><img src="assets/linkedin.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/vinay-singh-rawat-386068331/" target="_blank"><img src="assets/linkedin.png" alt=""></a>
                         </li>
                         <li class="social-item">
                             <a href="#"><img src="assets/twitter.png" alt=""></a>
@@ -84,16 +86,16 @@
                 <nav class="navbar">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <button class="navbar-link">About</button>
+                            <button class="navbar-link active" data-section="about">About</button>
                         </li>
                         <li class="navbar-item">
-                            <button class="navbar-link">Resume</button>
+                            <button class="navbar-link" data-section="resume">Resume</button>
                         </li>
                         <li class="navbar-item">
-                            <button class="navbar-link">Projects</button>
+                            <button class="navbar-link" data-section="projects">Projects</button>
                         </li>
                         <li class="navbar-item">
-                            <button class="navbar-link">Contact </button>
+                            <button class="navbar-link" data-section="contact">Contact </button>
                         </li>
                     </ul>
                 </nav>
@@ -101,16 +103,16 @@
                 <nav class="hamburger-menu">
                     <ul class="hamburger-navbar-list">
                         <li class="hamburger-navbar-item">
-                            <button class="hamburger-navbar-link">About</button>
+                            <button class="hamburger-navbar-link active" data-section="about">About</button>
                         </li>
                         <li class="hamburger-navbar-item">
-                            <button class="hamburger-navbar-link">Resume</button>
+                            <button class="hamburger-navbar-link" data-section="resume">Resume</button>
                         </li>
                         <li class="hamburger-navbar-item">
-                            <button class="hamburger-navbar-link">Projects</button>
+                            <button class="hamburger-navbar-link" data-section="projects">Projects</button>
                         </li>
                         <li class="hamburger-navbar-item">
-                            <button class="hamburger-navbar-link">Contact </button>
+                            <button class="hamburger-navbar-link" data-section="contact">Contact </button>
                         </li>
                     </ul>
                 </nav>
@@ -121,8 +123,15 @@
                     </header>
 
                     <section class="about-text">
-                        <p>A passionate Full Stack Web Developer and Java Backend Developer with strong knowledge of building modern, scalable, and secure web applications. Skilled in Java, Spring Boot, REST APIs, authentication systems, and responsive frontend development with a focus on clean architecture and performance optimization.Experienced in developing backend services, API integration, database management, and deployment workflows. Always eager to learn new technologies, solve real-world problems, and create high-quality applications that deliver smooth user experiences.</p>
-                        <p>If you're looking for a dedicated developer to build reliable and efficient web solutions, I'm ready to collaborate and turn ideas into powerful digital products.</p>
+                        <p>A passionate Full Stack Web Developer and Java Backend Developer with strong knowledge of
+                            building modern, scalable, and secure web applications. Skilled in Java, Spring Boot, REST
+                            APIs, authentication systems, and responsive frontend development with a focus on clean
+                            architecture and performance optimization.Experienced in developing backend services, API
+                            integration, database management, and deployment workflows. Always eager to learn new
+                            technologies, solve real-world problems, and create high-quality applications that deliver
+                            smooth user experiences.</p>
+                        <p>If you're looking for a dedicated developer to build reliable and efficient web solutions,
+                            I'm ready to collaborate and turn ideas into powerful digital products.</p>
                     </section>
 
                     <section class="service">
@@ -134,7 +143,8 @@
                                 </div>
                                 <div class="service-content-box">
                                     <h4 class="h4 service-item-title">Fullstack web development</h4>
-                                    <p class="service-item-text">Building responsive and dynamic web applications using modern frontend and backend technologies.</p>
+                                    <p class="service-item-text">Building responsive and dynamic web applications using
+                                        modern frontend and backend technologies.</p>
                                 </div>
                             </li>
 
@@ -144,26 +154,29 @@
                                 </div>
                                 <div class="service-content-box">
                                     <h4 class="h4 service-item-title">Java Developer</h4>
-                                    <p class="service-item-text">Developing secure and scalable applications using Java, Spring Boot, and REST APIs.</p>
+                                    <p class="service-item-text">Developing secure and scalable applications using Java,
+                                        Spring Boot, and REST APIs.</p>
                                 </div>
                             </li>
 
-                             <li class="service-item">
+                            <li class="service-item">
                                 <div class="service-icon-box">
                                     <img src="assets/api.png" alt="Api icon">
                                 </div>
                                 <div class="service-content-box">
                                     <h4 class="h4 service-item-title">API & Security</h4>
-                                    <p class="service-item-text">Creating protected APIs with JWT authentication and role-based authorization systems.</p>
+                                    <p class="service-item-text">Creating protected APIs with JWT authentication and
+                                        role-based authorization systems.</p>
                                 </div>
                             </li>
-                             <li class="service-item">
+                            <li class="service-item">
                                 <div class="service-icon-box">
                                     <img src="assets/devops.png" alt="devOps icon">
                                 </div>
                                 <div class="service-content-box">
                                     <h4 class="h4 service-item-title">Deployment & DevOps</h4>
-                                    <p class="service-item-text">Deploying applications using Git, Docker, and cloud platforms for smooth performance.</p>
+                                    <p class="service-item-text">Deploying applications using Git, Docker, and cloud
+                                        platforms for smooth performance.</p>
                                 </div>
                             </li>
                         </ul>
@@ -174,40 +187,50 @@
                         <div class="marquee-wrapper">
                             <div class="marquee-track">
                                 <div class="skill-item"><img src="assets/skills/C.svg" alt="C logo"></div>
-                                <div class="skill-item"><img src="assets/skills/C++ (CPlusPlus).svg" alt="C++ logo"></div>
+                                <div class="skill-item"><img src="assets/skills/C++ (CPlusPlus).svg" alt="C++ logo">
+                                </div>
                                 <div class="skill-item"><img src="assets/skills/HTML5.svg" alt="HTML5 logo"></div>
                                 <div class="skill-item"><img src="assets/skills/CSS3.svg" alt="CSS3 logo"></div>
-                                <div class="skill-item"><img src="assets/skills/JavaScript.svg" alt="JavaScript logo"></div>
+                                <div class="skill-item"><img src="assets/skills/JavaScript.svg" alt="JavaScript logo">
+                                </div>
                                 <div class="skill-item"><img src="assets/skills/Java.svg" alt="Java logo"></div>
                                 <div class="skill-item"><img src="assets/skills/MySQL.svg" alt="MySQL logo"></div>
-                                <div class="skill-item"><img src="assets/skills/PostgresSQL .svg" alt="PostgresSQL logo"></div>
+                                <div class="skill-item"><img src="assets/skills/PostgresSQL .svg"
+                                        alt="PostgresSQL logo"></div>
                                 <div class="skill-item"><img src="assets/skills/Spring.svg" alt="Spring logo"></div>
                                 <div class="skill-item"><img src="assets/skills/Postman.svg" alt="Postman"></div>
                                 <div class="skill-item"><img src="assets/skills/Git.svg" alt="Git logo"></div>
                                 <div class="skill-item"><img src="assets/skills/GitHub.svg" alt="GitHub logo"></div>
-                                <div class="skill-item"><img src="assets/skills/IntelliJ IDEA.svg" alt="IntelliJ logo"></div>
-                                <div class="skill-item"><img src="assets/skills/Visual Studio Code (VS Code).svg" alt="Vs code logo"></div>
+                                <div class="skill-item"><img src="assets/skills/IntelliJ IDEA.svg" alt="IntelliJ logo">
+                                </div>
+                                <div class="skill-item"><img src="assets/skills/Visual Studio Code (VS Code).svg"
+                                        alt="Vs code logo"></div>
                                 <div class="skill-item"><img src="assets/skills/C.svg" alt="C logo"></div>
-                                <div class="skill-item"><img src="assets/skills/C++ (CPlusPlus).svg" alt="C++ logo"></div>
+                                <div class="skill-item"><img src="assets/skills/C++ (CPlusPlus).svg" alt="C++ logo">
+                                </div>
                                 <div class="skill-item"><img src="assets/skills/HTML5.svg" alt="HTML5 logo"></div>
                                 <div class="skill-item"><img src="assets/skills/CSS3.svg" alt="CSS3 logo"></div>
-                                <div class="skill-item"><img src="assets/skills/JavaScript.svg" alt="JavaScript logo"></div>
+                                <div class="skill-item"><img src="assets/skills/JavaScript.svg" alt="JavaScript logo">
+                                </div>
                                 <div class="skill-item"><img src="assets/skills/Java.svg" alt="Java logo"></div>
                                 <div class="skill-item"><img src="assets/skills/MySQL.svg" alt="MySQL logo"></div>
-                                <div class="skill-item"><img src="assets/skills/PostgresSQL .svg" alt="PostgresSQL logo"></div>
+                                <div class="skill-item"><img src="assets/skills/PostgresSQL .svg"
+                                        alt="PostgresSQL logo"></div>
                                 <div class="skill-item"><img src="assets/skills/Spring.svg" alt="Spring logo"></div>
                                 <div class="skill-item"><img src="assets/skills/Postman.svg" alt="Postman"></div>
                                 <div class="skill-item"><img src="assets/skills/Git.svg" alt="Git logo"></div>
                                 <div class="skill-item"><img src="assets/skills/GitHub.svg" alt="GitHub logo"></div>
-                                <div class="skill-item"><img src="assets/skills/IntelliJ IDEA.svg" alt="IntelliJ logo"></div>
-                                <div class="skill-item"><img src="assets/skills/Visual Studio Code (VS Code).svg" alt="Vs code logo"></div>
-                    
+                                <div class="skill-item"><img src="assets/skills/IntelliJ IDEA.svg" alt="IntelliJ logo">
+                                </div>
+                                <div class="skill-item"><img src="assets/skills/Visual Studio Code (VS Code).svg"
+                                        alt="Vs code logo"></div>
+
                             </div>
                         </div>
                     </section>
                 </article>
 
-                <article class="resume active">
+                <article class="resume">
                     <header>
                         <h2 class="h2 article-title">Resume</h2>
                     </header>
@@ -244,7 +267,7 @@
                                     G.I.C Sendhikhal
                                 </h4>
                                 <p class="timeline-text">
-                                    Senior Secondary Education 
+                                    Senior Secondary Education
                                 </p>
                                 <span>2021</span>
                             </li>
@@ -262,7 +285,7 @@
 
 
 
-                          <div class="title-wrapper">
+                        <div class="title-wrapper">
                             <div class="icon-box"><img src="assets/book-open-solid-full.svg" alt=""></div>
                             <h3 class="h3">Experience</h3>
                         </div>
@@ -314,7 +337,7 @@
                                     Frontend Development
                                 </h4>
                                 <p class="timeline-text">
-                                    Octanet Service PVT LTD. 
+                                    Octanet Service PVT LTD.
                                 </p>
                                 <span>Nov,2024-Dec,2024 • <span class="duration">1 mo</span></span>
                                 <p class="timeline-text">
@@ -336,7 +359,7 @@
                         </ul>
                     </section>
                     <button class="form-btn" type="button">
-                        <img src="assets/document.png" alt="form-img">
+                        <i class="fa-solid fa-file"></i>
                         <span>Download CV</span>
                     </button>
                 </article>
@@ -349,67 +372,107 @@
 
                         <section class="project-list">
                             <ul class="projects-grid">
-                              
+
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://secureauthx.netlify.app/" target="_blank"><img src="assets/auth-system.jpg" alt=""> </a>
+                                        <a href="https://secureauthx.netlify.app/" target="_blank"><img
+                                                src="assets/auth-system.jpg" alt=""> </a>
                                     </div>
                                     <h3 class="project-title">Secure auth</h3>
                                     <p class="project-catogory">Java Full stack web application</p>
                                 </li>
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://github.com/vinaysinghrawat95/Expense_Tracker_API" target="_blank"><img src="assets/expense-tracker.jpg" alt=""></a>
+                                        <a href="https://github.com/vinaysinghrawat95/Expense_Tracker_API"
+                                            target="_blank"><img src="assets/expense-tracker.jpg" alt=""></a>
                                     </div>
                                     <h3 class="project-title">Expense Tracker</h3>
                                     <p class="project-catogory">Java Backend application</p>
                                 </li>
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://github.com/vinaysinghrawat95/To_Do_App" target="_blank"><img src="assets/to-do-list.avif" alt=""></a>
+                                        <a href="https://github.com/vinaysinghrawat95/To_Do_App" target="_blank"><img
+                                                src="assets/to-do-list.avif" alt=""></a>
                                     </div>
                                     <h3 class="project-title">To Do List</h3>
                                     <p class="project-catogory">Java Backend application</p>
                                 </li>
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://convertyourcurrencywebx.netlify.app/" target="_blank"><img src="assets/currency-converter.jpg" alt=""></a>
+                                        <a href="https://convertyourcurrencywebx.netlify.app/" target="_blank"><img
+                                                src="assets/currency-converter.jpg" alt=""></a>
                                     </div>
                                     <h3 class="project-title">Currency converter</h3>
                                     <p class="project-catogory">Frontend application</p>
                                 </li>
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://spidermanlandingpagex.netlify.app/" target="_blank"><img src="assets/spiderman.jpg" alt=""></a>
+                                        <a href="https://spidermanlandingpagex.netlify.app/" target="_blank"><img
+                                                src="assets/spiderman.jpg" alt=""></a>
                                     </div>
                                     <h3 class="project-title">Spiderman landing page</h3>
                                     <p class="project-catogory">Frontend application</p>
                                 </li>
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://tictactoekidsgame.netlify.app/" target="_blank"><img src="assets/game-icon-tic-tac-toe-260nw-1332893786.webp" alt=""></a>
+                                        <a href="https://tictactoekidsgame.netlify.app/" target="_blank"><img
+                                                src="assets/game-icon-tic-tac-toe-260nw-1332893786.webp" alt=""></a>
                                     </div>
                                     <h3 class="project-title">Tic tac toe</h3>
                                     <p class="project-catogory">Frontend application</p>
                                 </li>
                                 <li class="project-item">
                                     <div class="project-img">
-                                        <a href="https://rockpaperscissorskidsgame.netlify.app/" target="_blank"><img src="assets/rock-paper-scissors-icon-set-on-white-background-vector.jpg" alt=""></a>
+                                        <a href="https://rockpaperscissorskidsgame.netlify.app/" target="_blank"><img
+                                                src="assets/rock-paper-scissors-icon-set-on-white-background-vector.jpg"
+                                                alt=""></a>
                                     </div>
                                     <h3 class="project-title">Rock paper scissor</h3>
                                     <p class="project-catogory">Frontend application</p>
                                 </li>
-                            
-                               
+
+
                             </ul>
                         </section>
                     </header>
                 </article>
 
+                <article class="contact">
+                    <h2 class="article-title">
+                        Contact
+                    </h2>
+
+                    <section class="contact-form">
+                        <h3 class="form-title">Contact Form</h3>
+                        <form class="form">
+                            <div class="input-wrapper">
+                                <div class="form-input-container">
+                                    <input class="form-input" type="text" placeholder="Full name" value name="fullname">
+                                </div>
+                                <div class="form-input-container">
+                                    <input class="form-input" type="text" placeholder="Email address" value
+                                        name="emailaddress">
+                                </div>
+                            </div>
+
+                            <div class="form-input-container">
+                                <input class="form-input" type="text" placeholder="Subject" value name="subject">
+                            </div>
+                            <div class="form-input-container">
+                                <textarea name="message" class="form-input" placeholder="You message"></textarea>
+                            </div>
+                            <button class="form-btn" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Send message</span>
+                            </button>
+                        </form>
+                    </section>
+                </article>
+
             </div>
         </div>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 
