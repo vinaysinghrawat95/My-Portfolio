@@ -20,6 +20,7 @@ body {
     gap: 2rem;
     width: 100%;
     padding: 2rem 4rem;
+    background-color: #111111;
 }
 
 .sidebar {
@@ -28,15 +29,15 @@ body {
     height: auto;
     width: 28%;
     overflow-y: visible;
-    border: 2px solid black;
+    border: 2px solid #2b2b2b;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-
     align-self: flex-start;
+    background-color: #1e1e1f;
 }
 
 .info-div {
@@ -55,7 +56,7 @@ body {
     aspect-ratio: 1/1;
     border-radius: 20px;
     overflow: hidden;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-bottom: 1rem;
 }
 
@@ -68,12 +69,14 @@ body {
 .info-div h1 {
     font-size: clamp(1rem, 2vw, 1.8rem);
     padding-bottom: 1rem;
+    color: #fafafa;
 }
 
 .info-div p {
+    color: #fafafa;
     font-size: clamp(0.7rem, 1vw, 0.9rem);
     border-radius: 10px;
-    background-color: bisque;
+    background-color: #2b2b2c;
     font-size: 0.8rem;
     padding: 0.5rem;
 }
@@ -114,27 +117,32 @@ body {
 
 .contact-list .icon-box {
     flex-shrink: 0;
-    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 2rem;
+    width: 2rem;
+    /* border-radius: 12px;
+    background: #1e1e24; */
 }
 
-.icon-box img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
+.icon-box i {
+    font-size: 1.2rem;
+    color: #f2d06b;
 }
+
 
 .contact-title {
     font-size: clamp(0.6rem, 0.8vw, 0.9rem);
     font-size: 0.9rem;
-    color: rgb(212, 166, 106);
+    color: #8d8d8e;
     margin-bottom: 0.3rem;
 }
 
 .contact-info a {
     font-size: clamp(0.7rem, 0.9vw, 1rem);
     text-decoration: none;
-    color: black;
+    color: #d8d8d8;
     font-size: 0.99rem;
     word-break: break-all;
 }
@@ -155,10 +163,9 @@ body {
     flex-shrink: 0;
 }
 
-.social-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.social-item i {
+    font-size: 1.4rem;
+    color: #9f9f9f;
 }
 
 .second-separator {
@@ -174,6 +181,7 @@ body {
     flex: 1;
     overflow-x: hidden;
     border: 2px solid black;
+    background-color: #1e1e1f;
 }
 
 .hamburger-menu {
@@ -225,6 +233,7 @@ article.active{
 .article-title {
     font-size: 1.9rem;
     margin-bottom: 0.8rem;
+    color: #f8f8f8;
 }
 
 .article-title::after {
@@ -240,12 +249,13 @@ article.active{
 .about-text p {
     margin-bottom: 1rem;
     line-height: 1.7;
-    color: #555;
+    color: #d6d6d6;
 }
 
 .service-title {
     font-size: 1.6rem;
     margin: 2rem 0 1rem;
+    color: #f8f8f8;
 }
 
 .service-list {
@@ -280,11 +290,12 @@ article.active{
 .service-item-title {
     font-size: 1.2rem;
     margin-bottom: 0.4rem;
+    color: #f8f8f8;
 }
 
 .service-item-text {
     font-size: 0.95rem;
-    color: #666;
+    color: #d6d6d6;
     line-height: 1.5;
 }
 
@@ -458,6 +469,10 @@ span{
     background-color: rgb(250, 167, 43);
 }
 
+.resume-link{
+   text-decoration: none;
+}
+
 .form-btn{
     display: flex;
     align-items: center;
@@ -471,8 +486,8 @@ span{
     margin-top: 2rem;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.08);
-
-     border-radius: 18px;
+    border-radius: 18px;
+    text-decoration: none;
 
     background: linear-gradient(
         145deg,
