@@ -175,6 +175,7 @@ body {
 
 
 .main-content {
+    position: relative;
     align-self: flex-start;
     border-radius: 20px;
     height: auto;
@@ -189,11 +190,15 @@ body {
 }
 
 .navbar {
-    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: wheat;
+    border-bottom-left-radius: 12px;
 
 }
 
@@ -203,7 +208,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2.5rem;
 }
 
 .navbar-link {
@@ -268,9 +273,10 @@ article.active{
 .service-item {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    padding: 1.2rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
+    padding: 2.5rem;
+    border: 1px solid #3a3a3a;
+    box-shadow: 1px 1px 3px 0px #3a3a3a;
     border-radius: 14px;
 }
 
@@ -610,7 +616,178 @@ span{
 }
 
 
+@media (max-width: 1200px) {
+    .navbar{
+        padding: 1rem 0.5rem;
+    }
 
+    .navbar ul{
+        gap: 1rem;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .app{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: static;
+        min-height: unset;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+
+    }
+
+    .info-div {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 1rem;
+        flex: 1;
+    }
+
+    .info-div .name-role {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar .profile-image {
+        width: 6rem;
+        height: 6rem;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .info-div h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-div p {
+        padding: 0.2rem;
+        text-align: center;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .info-more {
+        display: none;
+    }
+
+    .info-more.visible {
+        display: block;
+        width: 100%;
+    }
+
+    .tabs {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+        border-bottom: none;
+        justify-content: space-around;
+        padding: 0.8rem 1rem;
+        z-index: 100;
+    }
+
+    .sidebar .separator {
+        margin: 0.5rem 0;
+    }
+
+    .sidebar .second-separator {
+        border-bottom: 2px solid rgba(65, 60, 60, 0.78);
+        margin: 0.5rem 0;
+    }
+
+    .contact-item {
+        padding: 0.4rem 0;
+    }
+
+    .contact-list .icon-box {
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+
+    .icon-box img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-content {
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+
+    .service-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background:white;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        padding: 0.5rem 0;
+        border-top-left-radius:10px;
+        border-top-right-radius: 10px;
+    }
+
+    .hamburger-navbar-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hamburger-navbar-item {
+        list-style: none;
+    }
+
+    .hamburger-navbar-item .hamburger-navbar-link {
+        color: 1.3rem;
+        font-weight: 500;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .hamburger-navbar-link.active{
+        color: rgb(212, 166, 106);
+        font-weight: 600;
+    }
+
+    .projects-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0;
+    }
+
+    
+}
 
 @media (max-width: 600px) {
     .app {
