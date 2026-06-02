@@ -46,3 +46,26 @@ hamburgerLinks.forEach((hamburgerLink)=>{
 });
 
 switchTabs("about");
+
+emailjs.init("JlspQaF5hx2lEnoDj");
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", (e)=>{
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_okk7zaa",
+        "template_hpn1hxv",
+        contactForm
+    )
+    .then(()=>{
+        alert("message send succesfully");
+        contactForm.reset();
+    })
+    .catch((error)=>{
+        console.error(error);
+        alert("Failed to send message");
+    });
+
+});
