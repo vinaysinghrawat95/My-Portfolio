@@ -3,7 +3,9 @@ const infoMore = document.querySelector(".info-more");
 const navLinks = document.querySelectorAll(".navbar-link");
 const hamburgerLinks = document.querySelectorAll(".hamburger-navbar-link");
 const articles = document.querySelectorAll("article");
-
+const contactFormBtn = document.querySelector("#contact-form-btn");
+const contactBtnText = document.querySelector(".contact-btn-text");
+const loader = document.querySelector(".loader");
 
 
 toggleBtn.addEventListener("click", ()=>{
@@ -54,16 +56,26 @@ const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", (e)=>{
     e.preventDefault();
 
+    contactFormBtn.disabled = true;
+    loader.classList.add("active");
+    contactBtnText.textContent = "Sending...";
+
     emailjs.sendForm(
         "service_okk7zaa",
         "template_hpn1hxv",
         contactForm
     )
     .then(()=>{
+        loader.classList.remove("active");
+        contactBtnText.textContent = "Send Message";
+        contactFormBtn.disabled = false;
         alert("message send succesfully");
         contactForm.reset();
     })
     .catch((error)=>{
+        loader.classList.remove("active");
+        contactBtnText.textContent = "Send Message";
+        contactFormBtn.disabled = false;
         console.error(error);
         alert("Failed to send message");
     });
