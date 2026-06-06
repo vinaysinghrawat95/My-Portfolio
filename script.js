@@ -59,6 +59,7 @@ contactForm.addEventListener("submit", (e)=>{
     contactFormBtn.disabled = true;
     loader.classList.add("active");
     contactBtnText.textContent = "Sending...";
+    contactFormBtn.style.cursor = "not-allowed";
 
     emailjs.sendForm(
         "service_okk7zaa",
@@ -69,15 +70,27 @@ contactForm.addEventListener("submit", (e)=>{
         loader.classList.remove("active");
         contactBtnText.textContent = "Send Message";
         contactFormBtn.disabled = false;
-        alert("message send succesfully");
+        contactFormBtn.style.cursor = "pointer";
+
+        Swal.fire({
+            icon: "success",
+            title: "Message sent!",
+            text: "Thank you for reaching out. I'll get back to you soon."
+        });
         contactForm.reset();
     })
     .catch((error)=>{
         loader.classList.remove("active");
         contactBtnText.textContent = "Send Message";
         contactFormBtn.disabled = false;
+        contactFormBtn.style.cursor = "pointer";
+
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong. Please try again later."
+        });
         console.error(error);
-        alert("Failed to send message");
     });
 
 });

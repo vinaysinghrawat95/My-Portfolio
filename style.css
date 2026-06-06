@@ -494,7 +494,7 @@ span {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 18px;
     text-decoration: none;
-
+    cursor: pointer;
     background: linear-gradient(145deg, rgba(35, 35, 35, 0.95), rgba(20, 20, 20, 0.95));
     color: #f7c75c;
 
