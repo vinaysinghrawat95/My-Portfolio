@@ -73,6 +73,8 @@ contactForm.addEventListener("submit", (e)=>{
         contactFormBtn.style.cursor = "pointer";
 
         Swal.fire({
+            background: "#1e1e1f",
+            confirmButtonColor: "#e4c466",
             icon: "success",
             title: "Message sent!",
             text: "Thank you for reaching out. I'll get back to you soon."
@@ -86,6 +88,8 @@ contactForm.addEventListener("submit", (e)=>{
         contactFormBtn.style.cursor = "pointer";
 
         Swal.fire({
+            background: "#1e1e1f",
+            confirmButtonColor: "#e4c466",
             icon: "error",
             title: "Oops...",
             text: "Something went wrong. Please try again later."
